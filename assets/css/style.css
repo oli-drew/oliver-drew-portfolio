@@ -1,26 +1,61 @@
+/* General Styles */
+body {
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
 /* Navbar */
-.flex-container  {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #009fd4;
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #009fd4;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 }
 
 .logo {
-    margin: 0 0 0 1em;
-    color: white;
+  margin: 1em 0 1em 1em;
+  color: white;
+  font-size: 120%;
+  text-transform: uppercase;
 }
 
-.navigation  {
-    display: flex;
+.navigation {
+  display: flex;
 }
 
 .navigation a {
-    display: block;
-    padding: 1em;
-    color: white;
+  display: block;
+  padding: 1em;
+  color: white;
+  text-decoration: none;
 }
 
 .navigation a:hover {
+  color: #002835;
+}
+
+/* Tablets - navbar */
+@media screen and (max-width: 992px) {
+  .logo {
+    margin: 0.75em;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Large smartphones - navbar  */
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation a {
+    text-align: center;
+    border-top: gainsboro solid 1px;
+  }
+  .navigation a:hover {
     background: #0085b1;
+  }
 }
