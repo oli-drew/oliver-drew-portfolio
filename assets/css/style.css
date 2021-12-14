@@ -59,3 +59,60 @@ body {
     background: #0085b1;
   }
 }
+
+/* Main */
+section {
+  padding: 1em 1em;
+  display: flex;
+}
+
+.section-heading {
+  border-right: navy solid 2px;
+  font-size: 150%;
+  text-align: right;
+  padding: 0.5em;
+}
+
+.section-content {
+  padding: 0.5em;
+  flex-grow: 3;
+}
+
+.about {
+  height: 200px;
+  background-color: rgba(0, 128, 0, 0.1);
+}
+
+.work {
+  height: 200px;
+  background-color: rgba(0, 0, 255, 0.1);
+}
+
+/* footer */
+.contact {
+  height: 100px;
+  background-color: rgba(128, 128, 128, 0.1);
+}
+
+/* .contact-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+/* Tablets - main and footer */
+@media screen and (max-width: 992px) {
+  section {
+    flex-direction: column;
+  }
+  .section-heading {
+    font-size: 150%;
+    text-align: center;
+    padding: 0.5em;
+    border-right: none;
+  }
+}
+
+/* Large smartphones - main  */
+/* @media screen and (max-width: 768px) {
+} */
