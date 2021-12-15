@@ -139,11 +139,11 @@ section {
 }
 
 /* Footer link styling */
-/* .contact-info a {
+.contact-info a {
   color: navy;
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.15em;
-} */
+}
 
 /* Tablets - main and footer */
 @media screen and (max-width: 992px) {
