@@ -61,6 +61,30 @@ body {
 }
 
 /* Hero Image */
+.hero {
+  position: relative;
+  /* Removes unwanted space below image */
+  line-height: 0;
+}
+
+.hero img {
+  max-width: 100%;
+}
+
+.hero-label {
+  position: absolute;
+  bottom: 1.75em;
+  right: 1.5em;
+  padding: 0.75em;
+  background-color: white;
+  color: black;
+}
+
+.hero-label h2 {
+  font-size: 120%;
+  text-transform: capitalize;
+  padding: 0.25em;
+}
 
 /* Main */
 section {
@@ -118,10 +142,10 @@ section {
   opacity: 1;
 }
 
-/* Image Overlay */
+/* Image Text Overlay */
 .example {
   position: relative;
-  text-align: center;
+  /* text-align: center; */
   color: white;
 }
 
@@ -141,7 +165,7 @@ section {
 
 .example-label p {
   font-size: 80%;
-  text-align: left;
+  /* text-align: left; */
 }
 
 /* Tablets - Images */
@@ -174,6 +198,10 @@ section {
   color: navy;
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.15em;
+}
+
+.contact-info a:hover {
+  color: black;
 }
 
 /* Tablets - main and footer */
