@@ -112,6 +112,22 @@ section {
   background-color: rgba(0, 128, 0, 0.1);
 }
 
+.about-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+.about-info p {
+  flex: 0 0 80%;
+}
+
+.about-info img {
+  max-width: 15%;
+  flex: 0 0 25%;
+}
+
 .work {
   /* height: 200px; */
   background-color: rgba(0, 0, 255, 0.1);
