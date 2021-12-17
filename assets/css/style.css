@@ -111,6 +111,11 @@ section {
 .work-examples div img {
   max-width: 100%;
   padding: 0.5em;
+  opacity: 0.7;
+}
+
+.work-examples div img:hover {
+  opacity: 1;
 }
 
 /* Image Overlay */
