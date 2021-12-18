@@ -21,6 +21,7 @@ body {
   align-items: center;
   /* background: #009fd4; */
   background: var(--blue);
+  /* background: var(--dark-blue); */
 }
 
 .logo {
@@ -260,7 +261,7 @@ section {
   text-decoration-thickness: 0.15em;
 }
 
-.contact-info a:hover {
+.contact-info li:hover {
   color: var(--dark-blue);
 }
 
@@ -283,7 +284,7 @@ section {
     flex-wrap: wrap;
     text-align: center;
   }
-  .contact-info a {
+  .contact-info li {
     flex: 0 0 50%;
     max-width: 50%;
     padding: 0.5em 0em 0.5em;
