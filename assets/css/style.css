@@ -1,3 +1,14 @@
+/* CSS variables for colour pallet declared in root of the page */
+:root {
+  --dark-blue: #1d3557;
+  --blue: #457b9d;
+  --light-blue: #a8dadc;
+  --light: #f1faee;
+  --red: #e63946;
+}
+
+/* var(--dark-blue); */
+
 /* General Styles */
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
@@ -8,15 +19,21 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #009fd4;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+  /* background: #009fd4; */
+  background: var(--blue);
 }
 
 .logo {
-  margin: 1em 0 1em 1em;
-  color: white;
-  font-size: 120%;
-  text-transform: uppercase;
+  margin: 0.5em 0em 0.5em 0em;
+  /* color: white; */
+  /* color: var(--light); */
+  color: var(--dark-navy);
+  font-size: 130%;
+  text-transform: sentence;
+  /* background-color: navy; */
+  /* background-color: var(--dark-blue); */
+  background-color: var(--light);
+  padding: 0.5em;
 }
 
 .navigation {
@@ -26,12 +43,15 @@ body {
 .navigation a {
   display: block;
   padding: 1em;
-  color: white;
-  text-decoration: none;
+  /* color: white; */
+  color: var(--light);
+  /* text-decoration: none; */
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 0.15em;
 }
 
 .navigation a:hover {
-  color: #002835;
+  color: var(--dark-blue);
 }
 
 /* Tablets - navbar */
@@ -53,11 +73,11 @@ body {
   }
   .navigation a {
     text-align: center;
-    border-top: gainsboro solid 1px;
+    border-top: var(--light-blue) solid 1px;
   }
-  .navigation a:hover {
-    background: #0085b1;
-  }
+  /* .navigation a:hover {
+    background: var(--blue);
+  } */
 }
 
 /* Hero Image */
@@ -76,8 +96,8 @@ body {
   bottom: 1.75em;
   right: 1.5em;
   padding: 0.75em;
-  background-color: white;
-  color: black;
+  background-color: var(--light);
+  color: var(--dark-blue);
 }
 
 .hero-label h2 {
@@ -93,7 +113,7 @@ section {
 }
 
 .section-heading {
-  border-right: navy solid 2px;
+  border-right: var(--dark-blue) solid 2px;
   font-size: 200%;
   text-align: right;
   padding: 0.5em;
@@ -109,7 +129,8 @@ section {
 
 .about {
   /* height: 200px; */
-  background-color: rgba(0, 128, 0, 0.1);
+  /* background-color: rgba(0, 128, 0, 0.1); */
+  background-color: var(--light);
 }
 
 .about-info {
@@ -120,6 +141,7 @@ section {
 }
 
 .about-info p {
+  padding: 0.5em;
   flex: 0 0 80%;
 }
 
@@ -128,9 +150,23 @@ section {
   flex: 0 0 25%;
 }
 
+/* Large smartphones - About  */
+@media screen and (max-width: 768px) {
+  /* Hide hero image on smartphones */
+  .hero {
+    display: none;
+  }
+  /* Makes profile image larger on smartphones */
+  .about-info img {
+    max-width: 25%;
+    flex: 0 0 25%;
+  }
+}
+
 .work {
   /* height: 200px; */
-  background-color: rgba(0, 0, 255, 0.1);
+  /* background-color: rgba(0, 0, 255, 0.1); */
+  background-color: var(--light);
 }
 
 .work-examples {
@@ -162,7 +198,7 @@ section {
 .example {
   position: relative;
   /* text-align: center; */
-  color: white;
+  /* color: var(--dark-blue); */
 }
 
 .example-label {
@@ -170,8 +206,10 @@ section {
   bottom: 1.75em;
   left: 0.5em;
   padding: 0.75em;
-  background-color: white;
-  color: black;
+  /* background-color: white; */
+  background-color: var(--light);
+  /* color: black; */
+  color: var(--dark-blue);
 }
 
 .example-label h3 {
@@ -199,7 +237,8 @@ section {
 /* footer */
 .contact {
   /* height: 100px; */
-  background-color: rgba(128, 128, 128, 0.1);
+  /* background-color: rgba(128, 128, 128, 0.1); */
+  background-color: var(--blue);
 }
 
 .contact-info {
@@ -209,15 +248,19 @@ section {
   padding: 2em;
 }
 
+.contact h2 {
+  color: var(--light);
+}
+
 /* Footer link styling */
 .contact-info a {
-  color: navy;
+  color: var(--light);
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.15em;
 }
 
 .contact-info a:hover {
-  color: black;
+  color: var(--dark-blue);
 }
 
 /* Tablets - main and footer */
@@ -234,5 +277,14 @@ section {
 }
 
 /* Large smartphones - main  */
-/* @media screen and (max-width: 768px) {
-} */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .contact-info a {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0.5em 0em 0.5em;
+  }
+}
