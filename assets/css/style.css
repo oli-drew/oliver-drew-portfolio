@@ -157,13 +157,21 @@ section {
 /* Large smartphones - About  */
 @media screen and (max-width: 768px) {
   /* Hide hero image on smartphones */
+  .section-content {
+    padding: 0em;
+  }
   .hero {
     display: none;
   }
-  /* Makes profile image larger on smartphones */
+  .about-info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0em;
+  }
   .about-info img {
-    max-width: 25%;
-    flex: 0 0 25%;
+    max-width: 50%;
+    padding-right: 0em;
+    padding-top: 1em;
   }
 }
 
