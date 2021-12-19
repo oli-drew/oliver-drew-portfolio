@@ -4,13 +4,15 @@
   --blue: #457b9d;
   --light: #f0f8ff;
   --light-blue: #8baac5;
+  --red: #e63946;
   --white: white;
   --black: black;
 }
 
 /* General Styles */
 body {
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono",
+    "Courier New", Courier, monospace;
 }
 
 /* Navbar */
@@ -18,19 +20,29 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* background: #009fd4; */
   background: var(--blue);
-  /* background: var(--dark-blue); */
 }
 
 /* Logo */
 .logo {
+  font-family: Consolas, Monaco, "Lucida Console", "Liberation Mono",
+    "Courier New", Courier, monospace;
   margin: 0.5em 0em 0.5em 0em;
-  color: var(--dark-navy);
+  color: var(--dark-blue);
   font-size: 130%;
   text-transform: sentence;
   background-color: var(--light);
   padding: 0.5em;
+}
+
+.logo::before {
+  content: "<h1> ";
+  color: var(--red);
+}
+
+.logo::after {
+  content: " </h1>";
+  color: var(--red);
 }
 
 .navigation {
@@ -122,11 +134,13 @@ section {
   min-width: 15%;
 }
 
+/* Section content styling */
 .section-content {
   padding: 2em;
   flex-grow: 3;
 }
 
+/* About Section */
 .about {
   background-color: var(--light);
 }
@@ -140,11 +154,15 @@ section {
 
 .about-info p {
   padding: 0.5em;
-  flex: 0 0 80%;
+  flex: 0 0 75%;
 }
 
 .about-info a {
-  color: var(--dark-navy);
+  color: var(--dark-blue);
+}
+
+.about-info a:hover {
+  color: var(--blue);
 }
 
 /* Profile image */
@@ -202,6 +220,8 @@ section {
 
 .work-examples div img:hover {
   opacity: 1;
+  /* Transition time */
+  transition: 1s;
 }
 
 /* Image Text Overlay */
