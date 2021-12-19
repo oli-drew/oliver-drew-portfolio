@@ -281,6 +281,14 @@ section {
   .navigation li:hover {
     background-color: var(--light-blue);
   }
+  /* Logo hide h1 tag */
+  .logo::before {
+    content: none;
+  }
+
+  .logo::after {
+    content: none;
+  }
   /* Remove padding on small screens */
   .section-content {
     padding: 0em;
