@@ -63,32 +63,6 @@ body {
   color: var(--dark-blue);
 }
 
-/* Tablets - navbar */
-@media screen and (max-width: 992px) {
-  .logo {
-    margin: 0.75em;
-  }
-  .flex-container {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-/* Large smartphones - navbar  */
-@media screen and (max-width: 768px) {
-  .navigation {
-    flex-direction: column;
-    width: 100%;
-  }
-  .navigation a {
-    text-align: center;
-    border-top: var(--light-blue) solid 1px;
-  }
-  .navigation li:hover {
-    background-color: var(--light-blue);
-  }
-}
-
 /* Hero Image */
 .hero {
   position: relative;
@@ -161,6 +135,7 @@ section {
   color: var(--dark-blue);
 }
 
+/* Links in the about section change color on hover */
 .about-info a:hover {
   color: var(--blue);
 }
@@ -172,36 +147,17 @@ section {
   padding-right: 0.5em;
 }
 
-/* Large smartphones - About  */
-@media screen and (max-width: 768px) {
-  /* Hide hero image on smartphones */
-  .section-content {
-    padding: 0em;
-  }
-  .hero {
-    display: none;
-  }
-  .about-info {
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0em;
-  }
-  .about-info img {
-    max-width: 50%;
-    padding-right: 0em;
-    padding-top: 1em;
-  }
-}
-
 .work {
   background-color: var(--light);
 }
 
+/* Work examples use flexbox and flex wrap */
 .work-examples {
   display: flex;
   flex-wrap: wrap;
 }
 
+/* First work example is larger than others */
 .work-examples div:first-child {
   flex: 0 0 100%;
   max-width: 100%;
@@ -218,6 +174,7 @@ section {
   opacity: 0.7;
 }
 
+/* Opacity of images changes on hover */
 .work-examples div img:hover {
   opacity: 1;
   /* Transition time */
@@ -248,22 +205,10 @@ section {
   font-size: 80%;
 }
 
-/* Tablets - Images */
-@media screen and (max-width: 992px) {
-  .work-examples {
-    flex-direction: column;
-  }
-  .work-examples div {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-}
-
-/* footer */
+/* Footer */
 .contact {
   color: var(--white);
   background-color: var(--blue);
-  /* display: flex; */
 }
 
 .contact .section-heading {
@@ -289,8 +234,18 @@ section {
   color: var(--dark-blue);
 }
 
-/* Tablets - main and footer */
+/* Media Queries */
+/* Tablets */
 @media screen and (max-width: 992px) {
+  /* Navbar */
+  .logo {
+    margin: 0.75em;
+  }
+  .flex-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* Main and Footer */
   section {
     flex-direction: column;
   }
@@ -303,10 +258,53 @@ section {
     text-underline-offset: 0.25em;
     text-decoration-thickness: 0.15em;
   }
+  /* Work Section */
+  .work-examples {
+    flex-direction: column;
+  }
+  .work-examples div {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
-/* Large smartphones - main  */
+/* Large smartphones */
 @media screen and (max-width: 768px) {
+  /* Navbar */
+  .navigation {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navigation a {
+    text-align: center;
+    border-top: var(--light-blue) solid 1px;
+  }
+  .navigation li:hover {
+    background-color: var(--light-blue);
+  }
+  /* Remove padding on small screens */
+  .section-content {
+    padding: 0em;
+  }
+  .hero {
+    display: none;
+  }
+  /* About Section */
+  .about-info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0em;
+  }
+  .about-info img {
+    max-width: 50%;
+    padding-right: 0em;
+    padding-top: 1em;
+  }
+  /* Work Section */
+  .example-label {
+    bottom: 1em;
+  }
+  /* Footer */
   .contact-info {
     flex-wrap: wrap;
     text-align: center;
@@ -317,5 +315,3 @@ section {
     padding: 0.5em 0em 0.5em;
   }
 }
-
-/* Media Queries */
