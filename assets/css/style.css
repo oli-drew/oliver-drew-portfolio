@@ -3,6 +3,7 @@
   --dark-blue: #1d3557;
   --blue: #457b9d;
   --light: #f0f8ff;
+  --light-blue: #8baac5;
   --white: white;
   --black: black;
 }
@@ -46,7 +47,7 @@ body {
 }
 
 /* Nav link colour on hover */
-.navigation a:hover {
+.navigation li:hover a {
   color: var(--dark-blue);
 }
 
@@ -70,6 +71,9 @@ body {
   .navigation a {
     text-align: center;
     border-top: var(--light-blue) solid 1px;
+  }
+  .navigation li:hover {
+    background-color: var(--light-blue);
   }
 }
 
@@ -139,10 +143,15 @@ section {
   flex: 0 0 80%;
 }
 
+.about-info a {
+  color: var(--dark-navy);
+}
+
 /* Profile image */
 .about-info img {
   max-width: 15%;
   flex: 0 0 25%;
+  padding-right: 0.5em;
 }
 
 /* Large smartphones - About  */
@@ -226,6 +235,7 @@ section {
 .contact {
   color: var(--white);
   background-color: var(--blue);
+  /* display: flex; */
 }
 
 .contact .section-heading {
@@ -235,7 +245,7 @@ section {
 .contact-info {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 2em;
 }
 
