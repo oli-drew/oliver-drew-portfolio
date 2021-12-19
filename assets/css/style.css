@@ -2,12 +2,10 @@
 :root {
   --dark-blue: #1d3557;
   --blue: #457b9d;
-  --light-blue: #a8dadc;
-  --light: #f1faee;
-  --red: #e63946;
+  --light: #f0f8ff;
+  --white: white;
+  --black: black;
 }
-
-/* var(--dark-blue); */
 
 /* General Styles */
 body {
@@ -24,15 +22,12 @@ body {
   /* background: var(--dark-blue); */
 }
 
+/* Logo */
 .logo {
   margin: 0.5em 0em 0.5em 0em;
-  /* color: white; */
-  /* color: var(--light); */
   color: var(--dark-navy);
   font-size: 130%;
   text-transform: sentence;
-  /* background-color: navy; */
-  /* background-color: var(--dark-blue); */
   background-color: var(--light);
   padding: 0.5em;
 }
@@ -41,16 +36,16 @@ body {
   display: flex;
 }
 
+/* Nav links */
 .navigation a {
   display: block;
   padding: 1em;
-  /* color: white; */
-  color: var(--light);
-  /* text-decoration: none; */
+  color: var(--white);
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.15em;
 }
 
+/* Nav link colour on hover */
 .navigation a:hover {
   color: var(--dark-blue);
 }
@@ -76,9 +71,6 @@ body {
     text-align: center;
     border-top: var(--light-blue) solid 1px;
   }
-  /* .navigation a:hover {
-    background: var(--blue);
-  } */
 }
 
 /* Hero Image */
@@ -88,10 +80,12 @@ body {
   line-height: 0;
 }
 
+/* Hero image full width */
 .hero img {
   max-width: 100%;
 }
 
+/* Label over hero image */
 .hero-label {
   position: absolute;
   bottom: 1.75em;
@@ -101,6 +95,7 @@ body {
   color: var(--dark-blue);
 }
 
+/* Hero label styling */
 .hero-label h2 {
   font-size: 120%;
   text-transform: capitalize;
@@ -113,14 +108,14 @@ section {
   display: flex;
 }
 
+/* Section heading styling */
 .section-heading {
+  color: var(--dark-blue);
   border-right: var(--dark-blue) solid 2px;
   font-size: 200%;
   text-align: right;
   padding: 0.5em;
   min-width: 15%;
-  /* Trying to force new line */
-  /* word-spacing: 200px; */
 }
 
 .section-content {
@@ -129,8 +124,6 @@ section {
 }
 
 .about {
-  /* height: 200px; */
-  /* background-color: rgba(0, 128, 0, 0.1); */
   background-color: var(--light);
 }
 
@@ -146,6 +139,7 @@ section {
   flex: 0 0 80%;
 }
 
+/* Profile image */
 .about-info img {
   max-width: 15%;
   flex: 0 0 25%;
@@ -165,8 +159,6 @@ section {
 }
 
 .work {
-  /* height: 200px; */
-  /* background-color: rgba(0, 0, 255, 0.1); */
   background-color: var(--light);
 }
 
@@ -198,8 +190,6 @@ section {
 /* Image Text Overlay */
 .example {
   position: relative;
-  /* text-align: center; */
-  /* color: var(--dark-blue); */
 }
 
 .example-label {
@@ -208,9 +198,7 @@ section {
   left: 0.5em;
   padding: 0.75em;
   text-transform: capitalize;
-  /* background-color: white; */
-  background-color: var(--light);
-  /* color: black; */
+  background-color: var(--white);
   color: var(--dark-blue);
 }
 
@@ -221,12 +209,10 @@ section {
 
 .example-label p {
   font-size: 80%;
-  /* text-align: left; */
 }
 
 /* Tablets - Images */
 @media screen and (max-width: 992px) {
-  /*  */
   .work-examples {
     flex-direction: column;
   }
@@ -238,30 +224,30 @@ section {
 
 /* footer */
 .contact {
-  /* height: 100px; */
-  /* background-color: rgba(128, 128, 128, 0.1); */
+  color: var(--white);
   background-color: var(--blue);
+}
+
+.contact .section-heading {
+  color: var(--white);
 }
 
 .contact-info {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 2em;
-}
-
-.contact h2 {
-  color: var(--light);
 }
 
 /* Footer link styling */
 .contact-info a {
-  color: var(--light);
+  color: var(--white);
+  padding: 1em;
   text-underline-offset: 0.25em;
   text-decoration-thickness: 0.15em;
 }
 
-.contact-info li:hover {
+.contact-info a:hover {
   color: var(--dark-blue);
 }
 
@@ -275,6 +261,9 @@ section {
     text-align: center;
     padding: 0.5em;
     border-right: none;
+    text-decoration: underline;
+    text-underline-offset: 0.25em;
+    text-decoration-thickness: 0.15em;
   }
 }
 
@@ -290,3 +279,5 @@ section {
     padding: 0.5em 0em 0.5em;
   }
 }
+
+/* Media Queries */
