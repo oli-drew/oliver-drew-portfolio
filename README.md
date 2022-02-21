@@ -8,7 +8,7 @@ Please feel free to get in touch if you would like to learn more about the proje
 
 **Projects include:**
 
-- Birmingham Association Banquets (BAB) - Birmingham centric restaurant finder
+- Birmingham Association Banquets (BAB) - Birmingham centric restaurant finder. This requires a Travel Advisor API key.
 - Weather Dashboard
 - JavaScript Quiz Game
 - Work Day Planner
