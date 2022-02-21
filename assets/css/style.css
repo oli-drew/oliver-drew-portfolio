@@ -141,9 +141,10 @@ section {
 
 /* Profile image */
 .about-info img {
-  max-width: 15%;
+  max-width: 20%;
   flex: 0 0 25%;
   padding-right: 0.5em;
+  border-radius: 50%;
 }
 
 .work {
@@ -170,7 +171,7 @@ section {
 .work-examples div img {
   max-width: 100%;
   padding: 0.5em;
-  opacity: 0.7;
+  opacity: 0.75;
 }
 
 /* Opacity of images changes on hover */
