@@ -4,7 +4,7 @@
 
 Hi, my name is Oliver Drew and this is my portfolio of web development projects. Please feel free to get in touch if you would like to learn more about the projects or to see other projects I have worked on.
 
-This portflio was created as part of a homework assignemnt during my time at the University of Birmingham's coding bootcamp.
+This portfolio was created as part of a homework assignemnt during my time at the University of Birmingham's coding bootcamp.
 
 **Projects include:**
 
@@ -20,8 +20,8 @@ This portflio was created as part of a homework assignemnt during my time at the
 
 ## Link to deployment
 
-https://oli-drew.github.io/portfolio/
+https://oli-drew.github.io/oliver-drew-portfolio/
 
-### Note
+## License
 
-Please note that images, links and contact information are currently place holders until sufficient examples have been created.
+[MIT](LICENSE)
