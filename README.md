@@ -17,7 +17,7 @@ Please feel free to get in touch if you would like to learn more about the proje
 
 ## Animated Screenshot
 
-![Scrolling preview of the Portfolio homepage](./assets/images/portfolio.gif)
+![Scrolling preview of the Portfolio homepage](./assets/images/portfolio-update.gif)
 
 ## Link to deployment
 
