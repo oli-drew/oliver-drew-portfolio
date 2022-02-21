@@ -24,4 +24,8 @@ https://oli-drew.github.io/oliver-drew-portfolio/
 
 ## License
 
-[MIT](LICENSE)
+[MIT License](LICENSE)
+
+## Contact Information
+
+[Email: oli_webdev@protonmail.com](mailto:oli_webdev@protonmail.com)
