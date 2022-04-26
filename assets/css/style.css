@@ -184,6 +184,7 @@ section {
 /* Image Text Overlay */
 .example {
   position: relative;
+  cursor: pointer;
 }
 
 .example-label {
@@ -323,3 +324,21 @@ section {
     padding: 0.5em 0em 0.5em;
   }
 }
+
+
+/* Learn More Button */
+.learnMore {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5em;
+  opacity: 0.6;
+}
+
+.learnMore:hover {opacity: 1}
